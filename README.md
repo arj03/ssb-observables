@@ -36,6 +36,7 @@ previous: %id of previous statement about the same feed and type
 ```
 
 TODO: would it make sense to tangle these?
+
 TODO: define if a new message linking to previous overwrites or extends data
 
 ## Validation
