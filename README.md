@@ -27,11 +27,13 @@ messages, such as content warning or similar metadata.
 The following schema is based on SSB, but could be extended to any log
 system with similar properties.
 
+```
 feed: @author
 statement: the type of statement, example: contact messages
 date: [seq1, seq2, ...]
 point-in-time: latest seq for feed
 previous: %id of previous statement about the same feed and type
+```
 
 TODO: would it make sense to tangle these?
 TODO: define if a new message linking to previous overwrites or extends data
