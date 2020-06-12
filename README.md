@@ -30,10 +30,14 @@ system with similar properties.
 ```
 feed: @author
 statement: the type of statement, example: contact messages
-date: [seq1, seq2, ...]
+data: [seq1, seq2, ...]
 point-in-time: latest seq for feed
 previous: %id of previous statement about the same feed and type
 ```
+
+As one would normally write these kinds of statement types for a lot 
+of feeds, it might make more sense to save the payload in a blob. Meaning,
+feed, data and point-in-time would be in the blob.
 
 TODO: would it make sense to tangle these?
 
