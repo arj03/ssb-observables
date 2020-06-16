@@ -35,9 +35,11 @@ point-in-time: latest seq for feed
 previous: %id of previous statement about the same feed and type
 ```
 
-As one would normally write these kinds of statement types for a lot 
-of feeds, it might make more sense to save the payload in a blob. Meaning,
-feed, data and point-in-time would be in the blob.
+As one would normally write these kinds of statement types for a lot
+of feeds, it might make more sense to save the payload in a
+blob. Meaning, feed, data and point-in-time would be in the blob. If
+updates are rather small compared to the initial message of a log
+statement, it would make sense to inline them.
 
 TODO: would it make sense to tangle these?
 
