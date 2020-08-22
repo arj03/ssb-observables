@@ -1,4 +1,4 @@
-# Log statements
+# Offchain log statements
 
 In a distributed system such as SSB where each user maintains their
 own immutable log, it might make sense to be able to write statements
@@ -19,8 +19,9 @@ becomes, how do you know that the peer that gave you those messages
 did not leave out any messages.
 
 Log statements could also be used to attach information to existing
-messages, such as content warning or similar metadata. Or to build an
-index of the latest version of some mutable objects.
+messages, such as content warning, pinned posts or similar
+metadata. Or to build an index of the latest version of some mutable
+objects.
 
 ## Schema
 
@@ -35,10 +36,12 @@ point-in-time: latest seq for feed
 version: 1
 ```
 
-I imagine that log statements live outside the log that they are
+I imagine log statements living outside the log that they are
 describing. This would have the benefit that they could potentially be
 much larger than messages on the log, and could be garbage collected
-more easily.
+more easily as only the latest version is needed. Furthermore if the
+restriction that the log statements has to refer to facts on the log,
+they could be used as history-less mutable objects.
 
 ## Validation
 
@@ -60,6 +63,15 @@ describing, a method for replicating these statements are
 needed. Something along the lines of vector clocks, where the key is a
 combination of feed and statement type. Probably with a special method
 for querying statements to find new.
+
+## Format
+
+Something like:
+
+- Encoding + hashing algorithm
+- Encoded content as defined in schema
+- Hash of encoding
+- Signature of hash
 
 ## History
 
