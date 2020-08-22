@@ -71,7 +71,7 @@ Something like:
 - Encoding + hashing algorithm
 - Encoded content as defined in schema
 - Hash of encoding
-- Signature of hash
+- Signature of everything above
 
 ## History
 
