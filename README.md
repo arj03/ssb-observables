@@ -40,8 +40,8 @@ I imagine log statements living outside the log that they are
 describing. This would have the benefit that they could potentially be
 much larger than messages on the log, and could be garbage collected
 more easily as only the latest version is needed. Furthermore if the
-restriction that the log statements has to refer to facts on the log,
-they could be used as history-less mutable objects.
+restriction that the log statements has to refer to facts on the log
+is laxex, then they could be used as history-less mutable objects.
 
 ## Validation
 
