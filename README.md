@@ -78,9 +78,9 @@ Something like:
 I originally proposed log statements to written on the same log, but I
 think it would be more general if they could reside outside a log as
 well. This would be particularly useful in a scenario where the log
-statements of a particular type would have a lot of version, but only
-the latest would be releveant. If they are written outside of the main
-log, as new versions are added the old can be safely forgotten.
+statements of a particular type would have a lot of versions, but only
+the latest would be releveant. In this case old versions can be safely
+forgotten.
 
 ## Related work
 
