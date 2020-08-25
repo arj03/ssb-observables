@@ -83,3 +83,5 @@ Thanks to regular a much more succinct name for this project.
 ## Related work
 
 This work is related to snapshots in event sourcing systems.
+
+Discussed on SSB: %Z3xS6WmnIVjwwynBOkdz3azct/2Es/DvgrMfNEAPUis=.sha256
