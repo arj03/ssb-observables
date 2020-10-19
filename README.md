@@ -57,16 +57,25 @@ version: 1
 
 Observables are very close to a versioned blob. So it is natural to
 think of both the existing blob protocol and also EBT as a way to
-distribute the data. I'm leaning towards building a protocol similar
-to EBT, but maybe simplier that has a type for the thing you are
-replicating. This protocol might also be useful for distributing
-mutiple feed formats.
+distribute the data.
+
+Basing it on the blob protocol has several downsides. It requires a
+new messages on the log for each new version of the observable. It
+would require garbage collection as the old versions the blobs are not
+really useful and lastly it would require something to actively
+request the blobs.
+
+Instead EBT will be used as that solves all of the downsides directly
+at the protocol level by only having one atomically updated file for
+each observable and pushing new versions as the obserable is updated.
 
 ## Data format
 
-- Encoding + hashing algorithm
+FIXME: stricker definition of this, but loosely
+
+- Encoding + hashing algorithm used
 - Encoded content as defined in schema
-- Hash of encoding
+- Hash of encoded data
 - Signature of everything above
 
 ## History
