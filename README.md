@@ -84,4 +84,11 @@ Thanks to regular a much more succinct name for this project.
 
 This work is related to snapshots in event sourcing systems.
 
+While it would have been better to design something like contact
+messages like [ssb-profile] in the first place, one cannot change the
+past and furthermore the system is more general than patching up bad
+application message formats.
+
 Discussed on SSB: %Z3xS6WmnIVjwwynBOkdz3azct/2Es/DvgrMfNEAPUis=.sha256
+
+[ssb-profile]: https://gitlab.com/ahau/ssb-plugins/ssb-profile
