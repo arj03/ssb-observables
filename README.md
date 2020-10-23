@@ -1,6 +1,6 @@
 # SSB observables
 
-In a distributed system such as SSB where each user maintains their
+In a distributed system such as [SSB] where each user maintains their
 own immutable log, it might make sense to be able to write statements
 about the messages in the log. One example would be contact messages
 that needs to be processed in the correct order to make sense, or a
@@ -106,4 +106,5 @@ application message formats.
 
 Discussed on SSB: %Z3xS6WmnIVjwwynBOkdz3azct/2Es/DvgrMfNEAPUis=.sha256
 
+[SSB]: https://github.com/ssbc
 [ssb-profile]: https://gitlab.com/ahau/ssb-plugins/ssb-profile
