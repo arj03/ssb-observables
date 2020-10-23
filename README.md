@@ -67,7 +67,13 @@ request the blobs.
 
 Instead EBT will be used as that solves all of the downsides directly
 at the protocol level by only having one atomically updated file for
-each observable and pushing new versions as the obserable is updated.
+each observable and pushing new versions as the obserable is
+updated. Since the data is signed and the version number always
+increases, data can be safely distributed between untrusted peers.
+
+As an optimization, by storing a window of the latest versions, it
+would be possible to send diffs instead of the whole state when
+replicating.
 
 ## Data format
 
