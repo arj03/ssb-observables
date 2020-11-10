@@ -1,5 +1,7 @@
 # SSB observables
 
+This spec has been superseeded by [ssb-meta-feed].
+
 In a distributed system such as [SSB] where each user maintains their
 own immutable log, it might make sense to be able to write statements
 about the messages in the log. One example would be contact messages
@@ -108,3 +110,4 @@ Discussed on SSB: %Z3xS6WmnIVjwwynBOkdz3azct/2Es/DvgrMfNEAPUis=.sha256
 
 [SSB]: https://github.com/ssbc
 [ssb-profile]: https://gitlab.com/ahau/ssb-plugins/ssb-profile
+[ssb-meta-feed]: https://github.com/arj03/ssb-meta-feed
